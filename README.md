@@ -1,2 +1,1 @@
-# personal
-schoolar uses
+# personal - schoolar use
