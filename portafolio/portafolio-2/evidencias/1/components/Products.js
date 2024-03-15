@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ActivityIndicator, FlatList, StyleSheet, Text, View } from "react-native";
 
-const url ="https://fakestoreapi.com/products"
+const url ="https://fakestoreapi.com/users"
 
-export default function Products(){
+export default function Users(){
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
