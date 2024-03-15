@@ -1,0 +1,36 @@
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { useNavigation } from '@react-navigation/native';
+
+import Navigation from "../Navigation";
+
+export default function HomeScreen(){
+    const navigation = useNavigation();
+    return(
+        <View>
+            <Text style={styles.text}>Hola Home Screen</Text>
+            <TouchableOpacity 
+            style={styles.buttonOp}
+            onPress={() => navigation.navigate("StackScreen")}>
+                <Text style={styles.textTouch}>Go to Stack Screen</Text>
+            </TouchableOpacity>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 28,
+        alignItems: "center",
+    },
+    textTouch: {
+        fontSize: 16,
+        color: "white",
+        alignItems: "center",
+    },
+    buttonOp: {
+        backgroundColor: "purple",
+        padding: 10,
+        margin: 10
+    },
+})
